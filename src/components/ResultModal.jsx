@@ -1,8 +1,8 @@
 export default function ResultModal(props) {
-  const { targetTime, result } = props;
+  const { targetTime, result, ref } = props;
 
   return (
-    <dialog className="result-modal">
+    <dialog className="result-modal" ref={ref}>
       <h2>Your {result}</h2>
       <p>
         Target time was <strong>{targetTime} seconds.</strong>
